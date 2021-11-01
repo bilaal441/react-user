@@ -1,0 +1,46 @@
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  width: 50rem;
+  max-width: 90%;
+  margin: 1rem auto;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  z-index: 1000;
+  padding-top: 0;
+  padding-bottom: 0.5rem;
+}
+
+.modal .container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 1rem;
+}
+
+.modal .header {
+  grid-column: 1 / -1;
+  text-transform: capitalize;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+  background: #8a0e61;
+  font-weight: bold;
+}
+
+.modal .content {
+  grid-column: 1 / -1;
+  font-size: 1.2rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.modal .btn {
+  grid-column: 3/ -2;
+  background: #fff;
+  padding: 1rem;
+}
