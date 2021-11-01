@@ -14,7 +14,7 @@ const UserInput = (props) => {
 
   const addHandlerSubmit = (e) => {
     e.preventDefault();
-    if (!enteredUserName ?? !enteredAge) {
+    if (!enteredUserName.trim().length ?? !enteredAge.trim().length) {
       ValidateHelper(`name and age (non-empty values)`);
       return;
     }
